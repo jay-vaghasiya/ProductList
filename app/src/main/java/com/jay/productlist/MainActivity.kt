@@ -1,5 +1,6 @@
 package com.jay.productlist
 
+import android.graphics.drawable.Icon
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -20,6 +21,7 @@ import androidx.compose.foundation.lazy.grid.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Star
+import androidx.compose.material.icons.rounded.AccountBox
 import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -158,7 +160,7 @@ class MainActivity : ComponentActivity() {
                     Icon(Icons.Outlined.Star, contentDescription = "Favorite")
                 }
                 Image(
-                    painter = rememberAsyncImagePainter(model = productModel.productImageUri),
+                    imageVector = Icons.Rounded.AccountBox,
                     contentDescription = "Image",
                     modifier = Modifier
                         .fillMaxWidth()
